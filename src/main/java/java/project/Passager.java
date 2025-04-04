@@ -1,4 +1,43 @@
 package java.project;
 
-public class Passager {
+import java.util.ArrayList;
+
+class Passager extends Personne {
+    private String passeport;
+    private ArrayList<Reservation> reservations;
+
+    public Passager(int identifiant, String nom, String adresse, String contact) {
+        super(identifiant, nom, adresse, contact);
+        this.reservations = new ArrayList<>();
+    }
+
+    @Override
+    public void obtenirInfos() {
+        System.out.println("Passager: " +);
+    }
+
+    public void reserverVol(Reservation reservation) {
+        reservations.add(reservation);
+        System.out.println("Réservation ajoutée pour le passager " + getNom());
+    }
+
+    public void annulerReservation(int numeroReservation) {
+        reservations.removeIf(r -> r.getNumeroReservation() == numeroReservation);
+        System.out.println("Réservation annulée (ID : " + numeroReservation + ")");
+    }
+
+    public void obtenirReservations() {
+        if (reservations.isEmpty()) {
+            System.out.println("Aucune réservation pour ce passager.");
+            return;
+        }
+
+        for (Reservation r : reservations) {
+            System.out.println("Réservation ID : " + r.getNumeroReservation());
+        }
+    }
+
+    public ArrayList<Reservation> getReservations() {
+        return reservations;
+    }
 }
