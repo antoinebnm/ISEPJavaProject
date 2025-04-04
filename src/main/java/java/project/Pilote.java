@@ -16,4 +16,10 @@ abstract class Pilote extends Employe {
     public String obtenirRole() {
         return "Pilote";
     }
+
+    // Getters / Setters
+    public String getLicence() {return this.licence;}
+    public void setLicence(String l) {this.licence = l;}
+    public int getHeures() {return this.heuresDeVol;}
+    public void setHeures(int h) {this.heuresDeVol = h;}
 }

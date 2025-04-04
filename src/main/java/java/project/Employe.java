@@ -12,7 +12,11 @@ abstract class Employe extends Personne {
         this.dateEmbauche = dateEmbauche;
     }
 
-    public int getNumeroEmploye() {return numeroEmploye;}
-
     public abstract String obtenirRole();
+
+    // Getters / Setters
+    public int getNumeroEmploye() { return numeroEmploye; }
+    public void setNumeroEmploye(int n) { this.numeroEmploye = n; }
+    public Date getdateEmbauche() { return dateEmbauche; }
+    public void setdateEmbauche(Date d) { this.dateEmbauche = d; }
 }

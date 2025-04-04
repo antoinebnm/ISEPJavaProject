@@ -43,6 +43,10 @@ class Personne {
         return personnes.removeIf(p -> p.getIdentifiant() == id);
     }
 
+    public void obtenirInfos() {
+        System.out.println("ID: " + identifiant + ", Nom: " + nom + ", Adresse: " + adresse + ", Contact: " + contact);
+    }
+
     // Getters / Setters
     public int getIdentifiant() { return identifiant; }
     public String getNom() { return nom; }
@@ -51,8 +55,4 @@ class Personne {
     public void setAdresse(String adresse) { this.adresse = adresse; }
     public String getContact() { return contact; }
     public void setContact(String contact) { this.contact = contact; }
-
-    public void obtenirInfos() {
-        System.out.println("ID: " + identifiant + ", Nom: " + nom + ", Adresse: " + adresse + ", Contact: " + contact);
-    }
 }

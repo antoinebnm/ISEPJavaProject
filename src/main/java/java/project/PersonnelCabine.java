@@ -14,4 +14,8 @@ class PersonnelCabine extends Employe {
     public String obtenirRole() {
         return "Personnel Cabine";
     }
+
+    // Getters / Setters
+    public String getQualification() { return this.qualification; }
+    public void setQualification(String nouvelleQualification) { this.qualification = nouvelleQualification; }
 }

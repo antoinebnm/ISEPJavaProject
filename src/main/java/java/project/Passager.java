@@ -13,7 +13,7 @@ class Passager extends Personne {
 
     @Override
     public void obtenirInfos() {
-        System.out.println("Passager: " +);
+        System.out.println("Passager : " + getNom() + ", nombre de réservations :" + reservations.size());
     }
 
     public void reserverVol(Reservation reservation) {
@@ -37,6 +37,7 @@ class Passager extends Personne {
         }
     }
 
+    // Getters / Setters
     public ArrayList<Reservation> getReservations() {
         return reservations;
     }
