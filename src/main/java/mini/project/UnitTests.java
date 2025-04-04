@@ -57,7 +57,7 @@ public class UnitTests {
         Vol vol = new Vol(1, null, null, dep1, arr1);
 
         Passager p1 = new Passager(1, "Nicola Comme", "Paris", "0600000000");
-        Reservation r1 = new Reservation(101, p1, vol, dep1); // dep1 -> p1 reserve le jour du départ...
+        Reservation r1 = new Reservation(101, p1, vol, dep1); // dep1 = jour du départ
         Reservation r2 = new Reservation(102, p1, vol, dep1);
 
         p1.reserverVol(r1);
