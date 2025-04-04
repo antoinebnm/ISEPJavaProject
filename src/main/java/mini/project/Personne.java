@@ -1,14 +1,14 @@
-package java.project;
+package mini.project;
 
 import java.util.ArrayList;
 
 class Personne {
-    private static ArrayList<Personne> personnes = new ArrayList<>();
-
     private int identifiant;
     private String nom;
     private String adresse;
     private String contact;
+
+    private static ArrayList<Personne> personnes = new ArrayList<>();
 
     public Personne(int identifiant, String nom, String adresse, String contact) {
         this.identifiant = identifiant;
@@ -17,6 +17,7 @@ class Personne {
         this.contact = contact;
     }
 
+    // CRUD
     public static void ajouter(Personne p) {
         personnes.add(p);
     }

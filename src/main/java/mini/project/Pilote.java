@@ -1,8 +1,8 @@
-package java.project;
+package mini.project;
 
 import java.util.Date;
 
-abstract class Pilote extends Employe {
+class Pilote extends Employe {
     private String licence;
     private int heuresDeVol;
 
@@ -18,8 +18,8 @@ abstract class Pilote extends Employe {
     }
 
     // Getters / Setters
-    public String getLicence() {return this.licence;}
+    public String getLicence() {return licence;}
     public void setLicence(String l) {this.licence = l;}
-    public int getHeures() {return this.heuresDeVol;}
+    public int getHeures() {return heuresDeVol;}
     public void setHeures(int h) {this.heuresDeVol = h;}
 }

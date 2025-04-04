@@ -1,4 +1,4 @@
-package java.project;
+package mini.project;
 
 import java.util.Date;
 
@@ -15,7 +15,6 @@ class PersonnelCabine extends Employe {
         return "Personnel Cabine";
     }
 
-    // Getters / Setters
-    public String getQualification() { return this.qualification; }
-    public void setQualification(String nouvelleQualification) { this.qualification = nouvelleQualification; }
+    // Getter
+    public String getQualification() { return qualification; }
 }

@@ -1,4 +1,4 @@
-package java.project;
+package mini.project;
 
 import java.util.ArrayList;
 
@@ -16,14 +16,20 @@ class Passager extends Personne {
         System.out.println("Passager : " + getNom() + ", nombre de réservations :" + reservations.size());
     }
 
+    // CRUD
     public void reserverVol(Reservation reservation) {
         reservations.add(reservation);
         System.out.println("Réservation ajoutée pour le passager " + getNom());
     }
 
     public void annulerReservation(int numeroReservation) {
-        reservations.removeIf(r -> r.getNumeroReservation() == numeroReservation);
-        System.out.println("Réservation annulée (ID : " + numeroReservation + ")");
+        for (Reservation r : reservations) {
+            if (r.getNumeroReservation() == numeroReservation) {
+                reservations.remove(r);
+                System.out.println("Réservation annulée (ID : " + numeroReservation + ")");
+                break;
+            }
+        }
     }
 
     public void obtenirReservations() {
@@ -37,7 +43,7 @@ class Passager extends Personne {
         }
     }
 
-    // Getters / Setters
+    // Getter
     public ArrayList<Reservation> getReservations() {
         return reservations;
     }
