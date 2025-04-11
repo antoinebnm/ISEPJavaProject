@@ -57,7 +57,7 @@ public class Aeroport {
         }
     }
 
-    // Getter
+    // Getters / Setters
     public String getNom() {return nom;}
     public String getVille() {return ville;}
     public String getDescription() {return description;}

@@ -15,6 +15,6 @@ class PersonnelCabine extends Employe {
         return "Personnel Cabine";
     }
 
-    // Getter
+    // Getters / Setters
     public String getQualification() { return qualification; }
 }

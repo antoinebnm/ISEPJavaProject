@@ -63,7 +63,7 @@ public class Avion {
         }
     }
 
-    // Getter
+    // Getters / Setters
     public String getImmatriculation() {return immatriculation;}
     public String getModele() {return modele;}
     public int getCapacite() {return capacite;}

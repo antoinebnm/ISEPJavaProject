@@ -38,7 +38,7 @@ public class Reservation {
         return listeReservations;
     }
 
-    // Getters
+    // Getters / Setters
     public int getNumeroReservation() {return numeroReservation;}
     public Passager getPassager() {return passager;}
     public Vol getVol() {return vol;}

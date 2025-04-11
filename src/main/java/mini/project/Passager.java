@@ -43,7 +43,7 @@ class Passager extends Personne {
         }
     }
 
-    // Getter
+    // Getters / Setters
     public ArrayList<Reservation> getReservations() {
         return reservations;
     }
