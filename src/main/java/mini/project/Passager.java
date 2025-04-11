@@ -32,14 +32,16 @@ class Passager extends Personne {
         }
     }
 
-    public void obtenirReservations() {
+    public Reservation obtenirReservations() {
         if (reservations.isEmpty()) {
             System.out.println("Aucune réservation pour ce passager.");
-            return;
+            return null;
         }
         for (Reservation r : reservations) {
             System.out.println("Réservation ID : " + r.getNumeroReservation());
+            return r;
         }
+        return null;
     }
 
     // Getters / Setters
