@@ -112,6 +112,14 @@ public class UnitTests {
 
 
         //obtenirReservations
+        assertTrue(p1.getReservations().contains(r1));
+    }
+
+    @Test
+    public void testEmploye(){
+        //test obtenirrole
+
 
     }
+
 }

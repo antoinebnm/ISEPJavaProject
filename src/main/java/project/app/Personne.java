@@ -46,6 +46,7 @@ public class Personne {
 
     public void obtenirInfos() {
         System.out.println("ID: " + identifiant + ", Nom: " + nom + ", Adresse: " + adresse + ", Contact: " + contact);
+
     }
 
     // Getters / Setters
