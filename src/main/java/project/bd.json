@@ -1,0 +1,27 @@
+{
+  "avions": [
+    {
+      "immatriculation": "X100",
+      "modele": "Boeing 737",
+      "capacite": 150,
+      "volsAssocies": []
+    }
+  ],
+  "aeroports": [
+    {
+      "nom": "CDG",
+      "ville": "Paris",
+      "description": "Hub principal",
+      "avions": []
+    },
+    {
+      "nom": "KIX",
+      "ville": "Osaka",
+      "description": "Hub principal",
+      "avions": []
+    }
+  ],
+  "vols": [],
+  "reservations": [],
+  "personnes": []
+}

@@ -1,8 +1,8 @@
-package mini.project;
+package project.app;
 
 import java.util.ArrayList;
 
-class Personne {
+public class Personne {
     private int identifiant;
     private String nom;
     private String adresse;

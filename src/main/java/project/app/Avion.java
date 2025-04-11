@@ -1,4 +1,4 @@
-package mini.project;
+package project.app;
 
 import java.util.ArrayList;
 
@@ -37,9 +37,9 @@ public class Avion {
         return true;
     }
 
-    public String toString() {
-        return modele + " (" + immatriculation + "), capacité: " + capacite + " passagers.";
-    }
+//    public String toString() {
+//        return modele + " (" + immatriculation + "), capacité: " + capacite + " passagers.";
+//    }
 
     // CRUD
     public static void ajouterAvion(Avion a) {

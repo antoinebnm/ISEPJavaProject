@@ -1,4 +1,4 @@
-package mini.project;
+package project.app;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
