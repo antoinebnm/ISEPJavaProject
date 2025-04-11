@@ -8,6 +8,7 @@ public class Reservation {
     private Passager passager;
     private Vol vol;
     private Date dateReservation;
+    private String etat = "non validée";
 
     private static ArrayList<Reservation> listeReservations = new ArrayList<>();
 
@@ -34,6 +35,7 @@ public class Reservation {
         return listeReservations.removeIf(r -> r.getNumeroReservation() == numero);
     }
 
+
     public static ArrayList<Reservation> getListeReservations() {
         return listeReservations;
     }
@@ -42,5 +44,6 @@ public class Reservation {
     public int getNumeroReservation() {return numeroReservation;}
     public Passager getPassager() {return passager;}
     public Vol getVol() {return vol;}
+    public String getEtat() {return etat;}
     public Date getDateReservation() {return dateReservation;}
 }

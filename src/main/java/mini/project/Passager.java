@@ -37,7 +37,6 @@ class Passager extends Personne {
             System.out.println("Aucune réservation pour ce passager.");
             return;
         }
-
         for (Reservation r : reservations) {
             System.out.println("Réservation ID : " + r.getNumeroReservation());
         }

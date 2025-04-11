@@ -31,7 +31,7 @@ public class Vol {
         this.equipeCabine = equipe;
     }
 
-    public void annulerVol(int numero) {
+    public static void annulerVol(int numero) {
         for (Vol v : vols) {
             if (v.getNumeroVol() == numero) {
                 v.etat = "Annulé";
@@ -63,11 +63,13 @@ public class Vol {
         passagers.add(p);
     }
 
-    public void listingPassagers() {
+    public Passager listingPassagers() {
         System.out.println("Passagers du vol " + numeroVol + " :");
         for (Passager p : passagers) {
             System.out.println(p.getNom());
+            return p;
         }
+        return null;
     }
 
     // Getters / Setters
@@ -77,6 +79,7 @@ public class Vol {
     public Date getDateDepart() {return dateDepart;}
     public Date getDateArrivee() {return dateArrivee;}
     public String getEtat() { return etat; }
+    public static ArrayList<Vol> getVols() {return vols;}
     public void setPassagers(ArrayList<Passager> passagers) {this.passagers = passagers;}
 
     public Avion getAvion() {return avion;}
